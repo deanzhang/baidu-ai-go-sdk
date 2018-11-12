@@ -1,4 +1,4 @@
-package v2
+package v3
 
 import (
 	sdk "github.com/deanzhang/baidu-ai-go-sdk"
