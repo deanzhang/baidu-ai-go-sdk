@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/chenqinghe/baidu-ai-go-sdk/voice"
+	"github.com/deanzhang/baidu-ai-go-sdk/voice"
 	"log"
 	"os"
 )
@@ -17,7 +17,7 @@ const (
 // Voice Composition
 func TextToSpeech() {
 	client := voice.NewVoiceClient(APIKEY, APISECRET)
-	file, err := client.TextToSpeech("Hello World")
+	file, err := client.TextToSpeech("欢迎光临，热烈欢迎，电话正在接通中，请稍后。", voice.Speed(6))
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -59,5 +59,5 @@ func SpeechToText() {
 
 func main() {
 	TextToSpeech()
-	SpeechToText()
+	//SpeechToText()
 }
