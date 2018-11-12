@@ -8,6 +8,6 @@ const (
 )
 
 func main() {
-	//DetectAndAnalysis()
-	Match()
+	DetectAndAnalysis()
+	//Match()
 }

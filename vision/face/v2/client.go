@@ -1,7 +1,7 @@
 package v2
 
 import (
-	sdk "github.com/chenqinghe/baidu-ai-go-sdk"
+	sdk "github.com/deanzhang/baidu-ai-go-sdk"
 )
 
 type FaceClient struct {
