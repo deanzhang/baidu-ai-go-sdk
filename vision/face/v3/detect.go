@@ -14,10 +14,6 @@ var (
 	typeMap map[string]string
 )
 
-/*type FaceResponse struct {
-	*req.Resp
-}*/
-
 type Location struct {
 	Left     float64 `json:"left"`
 	Top      float64 `json:"top"`
