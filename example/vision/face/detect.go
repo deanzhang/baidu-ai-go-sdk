@@ -22,5 +22,5 @@ func DetectAndAnalysis() {
 	if err != nil {
 		panic(err)
 	}
-	fmt.Println(rs.ToString())
+	fmt.Println(rs)
 }
