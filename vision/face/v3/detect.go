@@ -69,7 +69,7 @@ type Occlusion struct {
 	Mouth      float64 `json:"mouth"`
 	LeftCheek  float64 `json:"left_cheek"`
 	RightCheek float64 `json:"right_cheek"`
-	Chin       float64 `json:"chin"`
+	Chin       float64 `json:"chin_contour"`
 }
 
 func (o Occlusion) String() string {
@@ -77,10 +77,10 @@ func (o Occlusion) String() string {
 }
 
 type Quality struct {
-	Occlusion    []Occlusion `json:"occlusion"`
-	Blur         float64     `json:"blur"`
-	Illumination float64     `json:"illumination"`
-	Completeness int64       `json:"completeness"`
+	Occlusion    Occlusion `json:"occlusion"`
+	Blur         float64   `json:"blur"`
+	Illumination float64   `json:"illumination"`
+	Completeness int64     `json:"completeness"`
 }
 
 func (q Quality) String() string {
