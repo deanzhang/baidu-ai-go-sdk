@@ -11,7 +11,12 @@ const (
 )
 
 var (
-	typeMap map[string]string
+	typeMap map[string]string = map[string]string{"smile": "微笑", "laugh": "大笑",
+		"square": "方形", "triangle": "三角形", "oval": "椭圆", "round": "圆形",
+		"male": "男性", "female": "女性",
+		"common": "普通眼镜", "sun": "墨镜",
+		"yellow": "黄种人", "white": "白种人", "black": "黑种人", "arabs": "阿拉伯人",
+		"human": "真实人脸", "cartoon": "卡通人脸", "none": "none"}
 )
 
 type Location struct {
@@ -39,10 +44,6 @@ func (a Angle) String() string {
 type TypeProb struct {
 	Type        string  `json:"type"`
 	Probability float64 `json:"probability"`
-}
-
-func init() {
-	typeMap = map[string]string{"smile": "微笑", "laugh": "大笑", "square": "方形", "triangle": "三角形", "oval": "椭圆", "round": "圆形", "male": "男性", "female": "女性", "common": "普通眼镜", "sun": "墨镜", "yellow": "黄种人", "white": "白种人", "black": "黑种人", "arabs": "阿拉伯人", "human": "真实人脸", "cartoon": "卡通人脸", "none": "none"}
 }
 
 func (t TypeProb) String() string {

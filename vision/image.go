@@ -165,7 +165,6 @@ func (img *Image) Base64Encode() (string, error) {
 	}
 
 	return base64.StdEncoding.EncodeToString(bts), nil
-
 }
 
 func getImageSize(reader io.Reader) (*Size, error) {
